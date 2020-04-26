@@ -1,0 +1,104 @@
+/* navbar */
+.navbar-brand {
+    font-family: 'Lora', serif;
+}
+
+.navbar-brand p {
+    font-size: x-small;
+    line-height: 20px;
+}
+
+.navbar {
+    background-color: #ba3b46;
+}
+
+.navbar-nav a:hover {
+    color: #808f87 !important;
+}
+
+/* parallax */
+
+.container.header {
+    max-width: 100%;
+    margin: 90px auto;
+    background: #ffeedb;
+    font-size: 24px;
+    padding: 70px;
+}
+
+.parallax {
+    background: url('../img/1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+}
+
+.parallax h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    color: #ffeedb;
+    font-weight: 200px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+
+/* about */
+
+.container-about {
+    max-width: 100%;
+    margin: -90px auto;
+    background: #afd0bf;
+    font-size: 24px;
+    padding: 70px;
+}
+
+.about-content {
+    background: url('../img/2.jpg') no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+.about-content h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    font-weight: 200px;
+    color: #ffeedb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.main-about {
+    display: flex;
+    margin: 50px auto 100px;
+    flex-flow: column wrap;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-about a {
+    color: #afd0bf;
+    color: #808f87;
+}
+
+.main-about a:hover {
+    background-color: #808f87;
+    color: #afd0bf;
+}
+
+
+
+
+
+.abc {
+    height: 500px;
+}
+
+/* .jumbotron img {
+    width: 200px;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+} */
