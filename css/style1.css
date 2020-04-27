@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lora', serif;
+}
+
 /* navbar */
 .navbar-brand {
     font-family: 'Lora', serif;
@@ -76,7 +80,6 @@
     width: 79%;
     justify-content: center;
     align-items: center;
-
 }
 
 .main-about p {
@@ -102,13 +105,80 @@
     margin-top: 50px;
 }
 
-
-
-
-
-.abc {
-    height: 500px;
+.container-menu {
+    width: 100%;
+    background-color: #ffeedb;
 }
+
+.menu-header {
+    display: flex;
+    width: 57%;
+    margin: 90px auto;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+    padding-top: 80px;
+    color: #808f87;
+}
+
+.menu-header h2 {
+    font-size: 4rem;
+}
+
+.menu-header h2,
+p {
+    padding-top: 30px;
+}
+
+.container-card {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.card.text-center {
+    width: 28%;
+}
+
+.card .card-body {
+    padding: 50px;
+    color: #ffeedb;
+}
+
+.card .card-body.card-1 {
+    background-color: #808f87;
+}
+
+.card .card-body.card-2 {
+    background-color: #ba3b46;
+}
+
+.card .card-body.card-3 {
+    background-color: #61c9a8;
+    color: #808f87;
+}
+
+
+/* make reservation */
+.container-reservation {
+    display: flex;
+    background-color: #ffeedb;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* .jumbotron img {
     width: 200px;
