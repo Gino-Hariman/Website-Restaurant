@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e96f5fb0a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lib/tpicker.css">
+
+
+
+
 
     <title>Lascrea Restaurant</title>
 
@@ -118,21 +124,98 @@
     </div>
 
 
-    <!-- Make Reservation -->
     <div class="container-reservation">
-        <div class="reservation-content">
-            <h2 class="display2">Make a Reservation</h2>
+        <h2 class="text-center header-reservation">Make a Reservation</h2>
+        <div class="main-reservation">
+            <div class="input-group-prepend content-date">
+                <label id="label-date" class="input-group-text" for="datepicker">Date</label>
+                <input id="datepicker" type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+            <div class="content-time">
+                <button class="btn" onclick="showpickers('timepkr' ,12)"><i class="fa fa-clock-o"></i></button>
+                <input id="timepkr" class="form-control" placeholder="HH:MM" />
+                <div class="timepicker"></div>
+            </div>
+            <div class="content-people">
+                <select name="" id="people" class="form-control text-center" style="background-color: #ffeedb;">
+                    <option selected disabled value="">Party Size..</option>
+                    <option value="">1 person</option>
+                    <option value="">2 person</option>
+                    <option value="">3 person</option>
+                    <option value="">4 person</option>
+                    <option value="">5 person</option>
+                    <option value="">6 person</option>
+                </select>
+            </div>
+            <div class="content-submit">
+                <button id="btn-submit" type="button" class="btn">Submit</button>
+            </div>
         </div>
     </div>
+
+
+
+
+
+
+
+    <!-- Make Reservation -->
+    <!-- <div class="container-reservation">
+        <div class="header">
+            <h2 class="display2">Make a Reservation</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend main-date">
+                        <label id="label-date" class="input-group-text" for="datepicker">Date</label>
+                        <input id="datepicker" type="text" class="form-control"
+                            aria-label="Text input with dropdown button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="main-time">
+                <div class="content-time">
+                    <button class="btn" onclick="showpickers('timepkr' ,12)"><i class="fa fa-clock-o"></i></button>
+                    <input id="timepkr" class="form-control" placeholder="HH:MM" />
+                    <div class="timepicker"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="main-people">
+                <select name="" id="" class="form-control">
+                    <option value="">1. Teknik Informatika</option>
+                    <option value="">2. Teknik Komputer</option>
+                    <option value="">3. Sistem Informasi</option>
+                </select>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
     <!-- akhir make reservation -->
 
 
 
 
 
+
+
+
+
+
+
+    <!-- js sendiri -->
     <script src="js/app.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
+    <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -142,6 +225,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
+
+    <!-- datetime picker -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+    <script src="lib/tpicker.js"></script>
+
 
 </body>
 

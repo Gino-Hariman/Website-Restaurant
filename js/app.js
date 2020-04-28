@@ -25,10 +25,9 @@
 
 // });
 
-$('.btn .btn-outline-secondary').button('dispose');
-var a = 1;
-console.log(a);
-
+// $('.btn .btn-outline-secondary').button('toggle');
+// var a = 1;
+// console.log(a);
 
 
 
