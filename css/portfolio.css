@@ -1,0 +1,116 @@
+html {
+    /* position: relative; */
+}
+
+* {
+    font-family: 'Lora', serif;
+}
+
+
+body {
+    margin-bottom: 80px;
+    margin-top: 30px;
+    background-color: #ffeedb;
+}
+
+.navbar {
+    background-color: #ba3b46;
+}
+
+.container-about .thin-text {
+    color: #61c9a8;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.container-about .thin-text-2 {
+    letter-spacing: 2.5px;
+    color: #808f87;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.container-about {
+    /* position: relative; */
+    /* top: 400px; */
+    margin-top: 90px;
+    opacity: 1;
+    padding-left: 120px;
+    padding-right: 120px;
+    transition: .1s;
+}
+
+.row-2 {
+    margin-top: 30px;
+}
+
+#container-about {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+
+}
+
+hr {
+    width: 250px;
+    border-top: 2px solid #808f87;
+}
+
+#skill {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* margin-left: 300px; */
+    color: #808f87;
+}
+
+.pendidikan {
+    margin-left: 50px;
+    /* margin-top: 30px; */
+}
+
+.pendidikan hr {
+    margin-right: 500px;
+    margin-top: 50px;
+}
+
+.hobi hr {
+    margin-right: 500px;
+    margin-top: 50px;
+
+}
+
+.progress {
+    background-color: #afd0bf;
+}
+
+.progress .progress-bar {
+    background-color: #61c9a8;
+}
+
+footer a {
+    color: #808f87;
+}
+
+footer a:hover {
+    transform: scale(1.5);
+}
+
+.zoom {
+    width: 100%;
+    transition: transform .2s,
+        box-shadow .4s;
+    /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 .5rem 1.1rem rgba(0, 0, 0, .25) !important
+}

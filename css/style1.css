@@ -1,6 +1,5 @@
-body {
+* {
     font-family: 'Lora', serif;
-    margin-bottom: 500px !important;
 }
 
 /* navbar */
@@ -33,21 +32,29 @@ body {
 
 .parallax {
     background: url('../img/1.jpg') no-repeat center;
+    opacity: 0.9;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
     text-align: center;
-
+    font-style: italic;
 }
+
+
 
 .parallax h2 {
     display: flex;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 200px;
     color: #ffeedb;
-    font-weight: 200px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+.parallax p {
+    color: #ffeedb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 
 
 /* about */
@@ -72,7 +79,7 @@ body {
     padding-top: 150px;
     font-weight: 200px;
     color: #ffeedb;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .main-about {
@@ -128,10 +135,11 @@ body {
 
 .menu-header h2 {
     font-size: 4rem;
+    font-style: italic !important;
 }
 
 .menu-header h2,
-p {
+.menu-header p {
     padding-top: 30px;
 }
 
@@ -151,6 +159,7 @@ p {
 .card .card-body {
     padding: 50px;
     color: #ffeedb;
+    font-style: italic;
 }
 
 .card .card-body.card-1 {
@@ -168,15 +177,6 @@ p {
 
 
 /* make reservation */
-/* .container-reservation {
-    display: flex;
-    background-color: #ffeedb;
-    color: #808f87;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-} */
-
 .container-reservation {
     display: flex;
     margin: 0 auto;
@@ -217,6 +217,10 @@ p {
 #datepicker {
     background-color: #ffeedb;
     border: none;
+}
+
+.fade {
+    transition: 0.35s;
 }
 
 .content-time {
@@ -262,7 +266,267 @@ p {
 }
 
 #btn-submit:hover {
-    /* background-color: rgba(128, 143, 135, 1.2); */
+    background-color: rgba(128, 143, 135, 1.2);
     filter: brightness(85%);
     color: #ffeedb;
+}
+
+
+/* Upcoming events */
+.container-upcomingEvents {
+    background-color: #ffeedb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card {
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+
+.container-upcomingEvents h2 {
+    margin-top: 90px;
+    text-align: center;
+    color: #808f87;
+    font-style: italic;
+}
+
+.container-upcomingEvents .main-event {
+    width: 80%;
+    display: flex;
+    flex-wrap: column wrap;
+    justify-content: space-between;
+
+}
+
+.container-upcomingEvents .main-event .content img {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+.container-upcomingEvents .upcomingEvents-card {
+    position: relative;
+}
+
+.container-upcomingEvents .upcomingEvents-card .face {
+    width: 100%;
+    height: 300px;
+    /* transition: 0.6s; */
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card {
+    width: 30%;
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card .face1 {
+    height: 400px;
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card .face2 {
+    height: 400px;
+}
+
+.container-upcomingEvents .upcomingEvents-card .face.face1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container-upcomingEvents .upcomingEvents-card:hover .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card {
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25) !important
+}
+
+.container-upcomingEvents .upcomingEvents-card .face.face2 {
+    position: relative;
+    background: #808f87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    transition: 0.7s;
+    transform: translateY(-150px);
+}
+
+.container-upcomingEvents .upcomingEvents-card:hover .face.face2 {
+    height: 550px;
+    z-index: 2;
+    transform: translateY(-300px);
+}
+
+.container-upcomingEvents .upcomingEvents-card .face.face2 a {
+    text-decoration: none;
+    font-weight: 100px;
+    background-color: #ffeedb;
+    color: #808f87;
+    padding: 5px;
+}
+
+.container-upcomingEvents .upcomingEvents-card .face.face2 a:hover {
+    background-color: rgba(255, 238, 219, 0.9);
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card .face.face2 {
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    box-sizing: border-box;
+    color: #ffeedb;
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card .face.face2 #btn-event {
+    background-color: #ffeedb;
+    text-align: center;
+    color: #808f87;
+
+}
+
+.container-upcomingEvents .main-event .upcomingEvents-card:hover .face.face2 {
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    color: #ffeedb;
+}
+
+
+/* contact */
+.content-contact {
+    padding: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    background-color: #afd0bf;
+}
+
+.container-contact {
+    padding: 80px;
+    width: 100%;
+    height: 1000px;
+    background-color: #808f87;
+}
+
+#contact-group .form-control {
+    background-color: #afd0bf;
+    border: 1px solid #808f87;
+}
+
+#btn-contact {
+    border: 1px solid #808f87;
+    background-color: #808f87;
+    color: #ffeedb;
+    margin-left: 100%;
+}
+
+#btn-contact:hover {
+    background-color: rgba(128, 143, 135, 0.5);
+}
+
+.header-contact {
+    text-align: center;
+    margin-right: 100px;
+    color: #808f87;
+    font-size: 1.5rem;
+}
+
+
+/* opening */
+.container-opening {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffeedb;
+    height: 800px;
+}
+
+.content-opening {
+    /* height: 70%;
+    margin-top: 80px;
+    width: 80%; */
+    height: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #808f87;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffeedb;
+    padding: 10px;
+}
+
+.main-opening {
+    margin-top: 80px;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.content-opening .judul {
+    font-weight: 100px;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+#social-media {
+    box-sizing: border-box;
+    margin: 100px auto 20px;
+}
+
+#social-media a {
+    color: black;
+    font-size: x-large;
+}
+
+.footer-p {
+    margin: 0 auto;
+    color: #808f87;
+    font-size: 1.2rem;
+}
+
+#portfolio a {
+    text-decoration: none;
+    font-style: none;
+    color: #808f87;
+}
+
+#portfolio a:hover {
+    font-size: 1.5rem;
+    transition: 0.5s;
+    color: #ba3b46;
+}
+
+.container-location {
+    width: 100%;
+    height: 400px;
+}
+
+.container-location .gambar-peta img {
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 
 <head>
     <meta charset="UTF-8">
@@ -35,27 +35,25 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a style="color: #808f87;" class="nav-link" href="#">Home <span
+                        <a style="color: #808f87;" class="nav-link page-scroll" href="#home">Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: #ffeedb;" class="nav-link" href="#">Menus</a>
+                        <a style="color: #ffeedb;" class="nav-link page-scroll" href="#bagian-about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: #ffeedb;" class="nav-link" href="#">Orders</a>
+                        <a style="color: #ffeedb;" class="nav-link page-scroll" href="menu.html">Menus</a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: #ffeedb;" class="nav-link" href="#">Book Online</a>
+                        <a style="color: #ffeedb;" class="nav-link page-scroll" href="#reservation">Reservation</a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: #ffeedb;" class="nav-link" href="#">Plans & Pricing</a>
+                        <a style="color: #ffeedb;" class="nav-link page-scroll" href="#events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: #ffeedb;" class="nav-link" href="#">Forum</a>
+                        <a style="color: #ffeedb;" class="nav-link page-scroll" href="#contact">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a style="color: #ffeedb;" class="nav-link" href="#">Members</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -65,13 +63,16 @@
     <!-- parallax -->
     <div class="container header">
         <div class="parallax">
-            <h2 class="display-4">Eat. Drink. Relax</h2>
+            <h2 class="display-3">Eat. Drink. Relax</h2>
+            <p class="display-5">Treat Yourself</p>
+            <p>Lascrea is the place whre great cooking and fantastic vibes neet, Our food, delicious, and</p>
+            <p>affordable, and we welcome diners young and old. try it yourself-book table or stop by today.</p>
         </div>
     </div>
     <!-- akhir parallax -->
 
     <!-- About -->
-    <div class="container-about">
+    <div id="bagian-about" class="container-about">
         <div class="about-content">
             <h2 class="display-4">About</h2>
         </div>
@@ -84,7 +85,7 @@
                 our
                 ability to discover the most unique flavors from around the world and share them with the San francisco
                 area. Join us.</p>
-            <a class="btn btn-outline-secondary btn-lg btn-contact" href=".html" role="button">Contact</a>
+            <a class="btn btn-outline-secondary btn-lg btn-contact" href="about.html" role="button">Learn More</a>
         </div>
     </div>
 
@@ -100,31 +101,31 @@
         </div>
         <div class="container-card">
             <div class="card text-center">
-                <img src="img/3.jpg" class="card-img-top" alt="...">
+                <img src="img/steak.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-1">
                     <h2>Chef's Special</h2>
                     <p>Served All Day</p>
                 </div>
             </div>
             <div class="card text-center">
-                <img src="img/3.jpg" class="card-img-top" alt="...">
+                <img src="img/soup.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-2">
-                    <h2>Chef's Special</h2>
-                    <p>Served All Day</p>
+                    <h2>Soup of the Day</h2>
+                    <p>The Perfect Choice</p>
                 </div>
             </div>
             <div class="card text-center">
-                <img src="img/3.jpg" class="card-img-top" alt="...">
+                <img src="img/lamb.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-3">
-                    <h2>Chef's Special</h2>
+                    <h2>Lamb Shank</h2>
                     <p>Served All Day</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="container-reservation">
+    <!-- reservation -->
+    <div class="container-reservation" id="reservation">
         <h2 class="text-center header-reservation">Make a Reservation</h2>
         <div class="main-reservation">
             <div class="input-group-prepend content-date">
@@ -147,65 +148,180 @@
                     <option value="">6 person</option>
                 </select>
             </div>
-            <div class="content-submit">
+            <!-- <div class="content-submit">
                 <button id="btn-submit" type="button" class="btn">Submit</button>
+            </div> -->
+
+            <!-- Button to Open the Modal -->
+            <div class="content-submit">
+                <!-- Button to Open the Modal -->
+                <button id="btn-submit" type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                    Submit
+                </button>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal-body text-center py-4" style="background-color: #ffeedb; color: #808f87">
+                                <img src="img/phone.png" class="w-25"><br><br>
+                                We're currently not accepting reservations online.<br>
+                                <span style="font-size: 0.7rem">Please call us to complete your
+                                    reservation</span><br>(800)-800-8000
+                                <br><br>
+                                <button style="width: 40%; background-color: #808f87; color: #ffeedb; border: none;"
+                                    data-dismiss="modal"><span style="font-size: 0.8rem">OK</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
+    <!-- upcoming events -->
+    <div class="container-upcomingEvents" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="main-event">
+            <div class="upcomingEvents-card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/wine.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <h3>Wine Testing</h3>
+                        <p>Sel, 03 Jun | San Francisco
+                        </p>
+                        <div class="btn-event" id="btn-event">
+                            <button type="submit" style="color: #808f87;" class="btn btn-lg"><a target="_blank"
+                                    href="eventWine.html">RSVP</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-
-    <!-- Make Reservation -->
-    <!-- <div class="container-reservation">
-        <div class="header">
-            <h2 class="display2">Make a Reservation</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="input-group mb-3">
-
-                    <div class="input-group-prepend main-date">
-                        <label id="label-date" class="input-group-text" for="datepicker">Date</label>
-                        <input id="datepicker" type="text" class="form-control"
-                            aria-label="Text input with dropdown button">
+            <div class="upcomingEvents-card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/cocktail.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <h3>Cocktail Workshop</h3>
+                        <p>Sel, 10 Jun | San Francisco</p>
+                        <div class="btn-event" id="btn-event">
+                            <button type="submit" style="color: #808f87;" class="btn btn-lg"><a target="_blank"
+                                    href="eventCocktail.html.html">RSVP</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upcomingEvents-card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="img/chef.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <h3>Meet The Chef Brunch</h3>
+                        <p>Sel, 17 Jun | San Francisco</p>
+                        <div class="btn-event" id="btn-event">
+                            <button type="submit" style="color: #808f87;" class="btn btn-lg"><a target="_blank"
+                                    href="eventChef.html">RSVP</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="main-time">
-                <div class="content-time">
-                    <button class="btn" onclick="showpickers('timepkr' ,12)"><i class="fa fa-clock-o"></i></button>
-                    <input id="timepkr" class="form-control" placeholder="HH:MM" />
-                    <div class="timepicker"></div>
+    </div>
+    <!-- akhir upcoming event -->
+
+
+    <!-- contact -->
+    <div class="container-contact" id="contact">
+        <div class="content-contact">
+            <div class="header-contact">
+                <h1 class="display-3">Contact</h1>
+                <p>500 Terry Francois Street Francisco, CA 94158</p>
+                <p>Gino.hariman.123@gmail.com</p>
+                <p>123-456-7890</p>
+            </div>
+            <div class="div form-contact">
+                <form id="contact-group">
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Address" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <input type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" placeholder="Phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" placeholder=" Type your message here"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <button type="submit" id="btn-contact" class="btn btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-location" id="location">
+            <div class="gambar-peta text-center">
+                <a target="_blank" href="https://www.google.com/maps/@46.3942919,2.6062867,21z"><img src="img/peta.png"
+                        alt="location"></a>
+            </div>
+        </div>
+    </div>
+    <!-- akhir contact -->
+
+
+
+    <!-- opening hours -->
+    <div class="container-opening">
+        <div class="main-opening">
+            <div class="content-opening">
+                <p class="judul">Opening Hours</p>
+                <p>Dine In or Take Away</p>
+                <p>Monday-Saturday: 11am - 11pm <br><span>Sunday: 11am-7pm</span></p>
+            </div>
+            <footer id="social-media">
+
+                <a target="_blank" href="https://www.youtube.com/channel/UCPwACEY5I4mBH2dyTK2tC-A?view_as=subscriber"
+                    data-toggle="tooltip" title="Subscibe Now!"><i class="fab fa-youtube ml-3 text-black"></i></a>
+                <a target="_blank" href="https://www.facebook.com/gino.hariman.5" data-toggle="tooltip"
+                    title="gino.hariman.5 - add now!"><i class="fab fa-facebook text-black ml-3"></i></a>
+                <a target="_blank" href="https://www.instagram.com/gino.hrmn/?hl=id" data-toggle="tooltip"
+                    title="gino.hrmn - follow now!"><i class="fab fa-instagram text-black ml-3"></i></a>
+
+                <div class="mail">
+                    <span><i class="fas fa-paper-plane"> : </i> ginohrmn26@gmail.com</span>
                 </div>
-            </div>
+            </footer>
+
+            <p id="portfolio" class="footer-p">&copy by Lascrea Created by <a href="portfolio.html">Gino Hariman</a></p>
         </div>
-        <div class="col-md-3">
-            <div class="main-people">
-                <select name="" id="" class="form-control">
-                    <option value="">1. Teknik Informatika</option>
-                    <option value="">2. Teknik Komputer</option>
-                    <option value="">3. Sistem Informasi</option>
-                </select>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-    <!-- akhir make reservation -->
-
-
-
-
-
+    </div>
+    <!-- akhir opening hours -->
 
 
 
@@ -226,6 +342,11 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+
+
 
     <!-- datetime picker -->
     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
@@ -238,9 +359,24 @@
         $(function () {
             $("#datepicker").datepicker();
         });
+
+        $('.page-scroll').on('click', function (e) {
+
+            var tujuan = $(this).attr('href');
+            var elemenTujuan = $(tujuan);
+            $('html,body').animate({
+                scrollTop: elemenTujuan.offset().top - 60
+            }, 1000, 'easeInOutExpo');
+            e.preventDefault();
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
     </script>
 
     <script src="lib/tpicker.js"></script>
+
 
 
 </body>
